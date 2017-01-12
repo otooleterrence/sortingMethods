@@ -25,3 +25,15 @@ describe('Split Array function', function() {
       expect( split([2,4,5,6,7,8,9,10])).toEqual( [[2,4,5,6], [7,8,9,10]] );
   });
 });
+
+
+describe('Merge Array function', function() {
+  it('is able to combine two halves', function() {
+      expect( merge([2,4,5,6],[7,8,9])).toEqual( [2,4,5,6,7,8,9]);
+  });
+
+  it('is able to combine two halves', function() {
+      expect( merge([1,2,3,4],[5,6,7,8])).toEqual( [1,2,3,4,5,6,7,8]);
+  });
+
+});
