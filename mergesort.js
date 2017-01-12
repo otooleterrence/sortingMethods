@@ -2,6 +2,8 @@ function mergeSort( arr ) {
     let finalArr = [];
 
 
+
+
     return finalArr;
 };
 
@@ -29,16 +31,12 @@ function merge( arr1, arr2 ) {
 
 function split( arr ) {
 
-    let firstHalf = arr.slice( 0, (arr.length/2) ),
-        secondHalf = arr.slice( (arr.length/2), arr.length );
+    let firstHalf = arr.slice( 0, (arr.length/2) );
+    let secondHalf = arr.slice( (arr.length/2), arr.length );
+    let newArr = [firstHalf, secondHalf];
+    // firstHalf.concat(secondHalf);
 
-    return [ firstHalf, secondHalf ];
-    
+    // console.log('slpit array ' + newArr);
+    return newArr;
+
 };
-
-function mergeSort (arr) {
-	
-
-
-
-}
